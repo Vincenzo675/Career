@@ -1,24 +1,3 @@
-/**
- * CareerConnect — Full Android-style Job Marketplace App
- * Single-file JSX. All screens, components, routing, and modals included.
- * Bugs fixed vs original source:
- *  - App.css Vite defaults removed (no more max-width/text-align overrides)
- *  - font-google-sans utility defined inline
- *  - AnimatePresence imported but unused removed
- *  - Missing React import on MD3Chip / MD3FAB fixed (ReactNode typed)
- *  - BottomNav hidden paths now use correct startsWith logic
- *  - ChatScreen h-full now flex flex-col properly filling viewport
- *  - JobDetailsScreen fixed bottom bar now respects max-w-lg centering
- *  - Edit button on ProfileScreen now opens working EditProfile sheet
- *  - All tappable unbuilt features show ComingSoon bottom-sheet instead of plain toast
- *  - Applied tab in JobsScreen now shows "Applied" list (was always empty, fixed with applied state)
- *  - Notifications "connection" tap fixed (split was returning wrong index)
- *  - ResumeBuilderScreen stepper connector widths adjusted so all 5 steps fit
- *  - Search suggestions tap now uses activeTab to show relevant content
- *  - index.css @import moved before @tailwind directives (ordering fix)
- *  - All CSS class conflicts from App.css wiped
- */
-
 import { useState, useEffect, useRef, createContext, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
